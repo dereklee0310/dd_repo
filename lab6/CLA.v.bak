@@ -1,0 +1,31 @@
+module CLA(clk, rst, A, B, carry, Y);
+input  clk;
+input  rst;
+input  [3:0]A;
+input  [3:0]B;
+input  carry;
+output [4:0]Y;
+
+reg	 [3:0]P;
+reg	 [3:0]G;
+reg	 [4:0]S;
+reg	 [4:0]C;
+
+assign	Y = S;
+
+always@(posedge clk or negedge rst)
+begin  
+	if(!rst)
+	begin
+		P <= 4'd0;
+		G <= 4'd0;
+		S <= 5'd0;
+		C <= 5'd0;
+	end
+	else
+	begin
+	
+	end
+end
+
+endmodule 

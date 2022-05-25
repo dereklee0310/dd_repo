@@ -1,0 +1,21 @@
+module multiplier(clk, rst, A, B, Y);
+input	 clk;
+input	 rst;
+input	 [3:0]A;
+input  [2:0]B;
+output [7:0]Y;
+
+always@(posedge clk or negedge rst)
+begin  
+	if(!rst)
+	begin
+	
+	end
+	else
+	begin
+	
+	end
+end
+
+
+endmodule 
